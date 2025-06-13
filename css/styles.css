@@ -1,0 +1,47 @@
+
+html{
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Utilidades */
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.px-2{
+    padding: 0 2rem;
+}
+
+.p-6{
+    padding: 6rem;
+}
+
+.p-2{
+    padding: 2rem;
+}
+
+/* Navegación */
+
+.nav{
+    background-color: rgb(85, 85, 85);
+}
+
+.ul-nav{
+    list-style: none;
+    gap: 3rem;
+    font-size: 1.4rem;
+}
+
+.nav-link{
+    color: white;
+}
+
+/* Presentacion */
+
+.presentacion-foto{
+    width: 400px;
+}
