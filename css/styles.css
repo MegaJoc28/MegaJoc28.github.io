@@ -16,8 +16,8 @@ html{
     padding: 0 2rem;
 }
 
-.p-6{
-    padding: 6rem;
+.p-8{
+    padding: 8rem;
 }
 
 .p-2{
@@ -42,6 +42,17 @@ html{
 
 /* Presentacion */
 
+.presentacion{
+    background-color: rgba(136, 136, 136, 0.856);
+}
+
 .presentacion-foto{
     width: 400px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit:cover;
+}
+
+.presentacion-text{
+    font-size: 1.3rem;
 }
