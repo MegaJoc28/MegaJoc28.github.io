@@ -16,6 +16,10 @@ html{
     padding: 0 2rem;
 }
 
+.py-3{
+    padding: 3rem 0;
+}
+
 .p-8{
     padding: 8rem;
 }
@@ -55,4 +59,15 @@ html{
 
 .presentacion-text{
     font-size: 1.3rem;
+    color: white;
+}
+
+/* Conocimientos */
+
+#conocimientos-title{
+    cursor: pointer;
+}
+
+#conocimientos-text{
+    display: block;
 }
