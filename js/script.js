@@ -1,9 +1,12 @@
 
-document.getElementById("conocimientos-title").addEventListener("click", function() {
-      const texto = document.getElementById("conocimientos-text");
-      if (texto.style.display === "block") {
-        texto.style.display = "none";
-      } else {
-        texto.style.display = "block";
-      }
+  document.addEventListener("DOMContentLoaded", function () {
+    const title = document.getElementById("conocimientos-title");
+    const content = document.getElementById("conocimientos-text");
+    const arrow = title.querySelector(".arrow");
+
+    title.addEventListener("click", function () {
+      const isActive = content.classList.toggle("active");
+      arrow.classList.toggle("rotated", isActive);
     });
+  });
+

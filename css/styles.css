@@ -64,10 +64,45 @@ html{
 
 /* Conocimientos */
 
-#conocimientos-title{
+.conocimientos-title{
     cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
 }
 
-#conocimientos-text{
-    display: block;
+.conocimientos-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-height: 500px; /* Suficiente para mostrar el contenido completo */
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.conocimientos-text.active {
+    opacity: 0;
+}
+
+.arrow {
+  display: inline-block;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.arrow.rotated {
+  transform: rotate(180deg); /* Gira la flecha hacia arriba */
+}
+
+.conocimientos-img{
+    height: 10rem;
+}
+
+.conocimientos-img__text{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.bold{
+    font-weight: bold;
 }
