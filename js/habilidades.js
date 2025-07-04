@@ -2,8 +2,7 @@
 export const frontendSkills = [
   // Habilidad corrupta sin nombre
   { imagen: "./assets/corrupta.png", estrellas: 5 },
-  
-  { nombre: "HTML5 / CSS3", imagen: "./assets/html.png", estrellas: 4 },
+  { nombre: "", imagen: "./assets/html.png", estrellas: 4 },
   { nombre: "JavaScript", imagen: "./assets/javascript.png", estrellas: 3 },
 ];
 
