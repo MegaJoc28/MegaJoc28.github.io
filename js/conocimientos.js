@@ -17,7 +17,7 @@ function crearHabilidadHTML(skill) {
 }
 
 function renderizarSkills(skills, contenedorId) {
-  const contenedor = document.getElementById(contenedorId);
+  const contenedor = document.querySelector(`#${contenedorId} .skills-list`);
   skills.forEach(skill => {
     try {
       const skillHTML = crearHabilidadHTML(skill);
