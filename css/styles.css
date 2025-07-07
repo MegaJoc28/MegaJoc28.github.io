@@ -4,7 +4,6 @@ html {
 }
 
 body {
-    background-color: #f8f8f8;
     color: #333;
     margin: 0;
     padding: 0;
@@ -113,6 +112,10 @@ body {
 
 /* ------------------------- Proyectos ---------------------------------- */
 
+
+.proyectos{
+    background: #cacaca;
+}
 
 .proyectos-title {
     font-size: 2rem;
