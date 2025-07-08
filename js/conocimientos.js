@@ -2,9 +2,8 @@
 import { frontendSkills, backendSkills, otherSkills } from "./habilidades.js";
 
 function crearHabilidadHTML(skill) {
-  if (!skill.nombre) {
-    console.warn("Habilidad sin nombre detectada y omitida:", skill); // Opcional: para depuración
-    return null; // Retorna null para indicar que no se debe crear el elemento
+  if (!skill.nombre || skill.imagen || skill.estrellas) {
+    throw new Error("Error al cargar la data.")
   };;
 
   const div = document.createElement("div");
