@@ -113,7 +113,7 @@ body {
 /* ------------------------- Proyectos ---------------------------------- */
 
 
-.proyectos{
+.proyectos {
     background: #cacaca;
 }
 
@@ -180,16 +180,28 @@ body {
     text-align: center;
     padding-left: 0;
     font-size: 2rem;
+    /* Añade un margen inferior para separar del contenido colapsable */
+    margin-bottom: 1rem;
 }
 
 .conocimientos-text {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    overflow: hidden;
+    max-height: 1000px;
+    transition: max-height 0.7s cubic-bezier(0.4, 0.0, 0.6, 1.0), opacity 0.7s ease-out;
+    opacity: 1;
 }
 
 .conocimientos-text.active {
     opacity: 0;
+}
+
+.conocimientos-text.hidden {
+    /* Cambiamos de 'active' a 'hidden' para mayor claridad */
+    max-height: 0;
+    opacity: 0;
+    /* Con esto, el contenido se vuelve invisible */
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .arrow {
