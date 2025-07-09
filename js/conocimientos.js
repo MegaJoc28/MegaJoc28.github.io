@@ -2,9 +2,9 @@
 import { frontendSkills, backendSkills, otherSkills } from "./habilidades.js";
 
 function crearHabilidadHTML(skill) {
-  if (!skill.nombre || skill.imagen || skill.estrellas) {
+  if (!skill.nombre || !skill.imagen || !skill.estrellas) {
     throw new Error("Error al cargar la data.")
-  };;
+  };
 
   const div = document.createElement("div");
   div.classList.add("conocimiento");
