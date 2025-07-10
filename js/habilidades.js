@@ -1,6 +1,5 @@
 
 export const frontendSkills = [
-  // Habilidad corrupta sin nombre
   { nombre: "HTML", imagen: "./assets/html.png", estrellas: 4 },
   { nombre: "CSS", imagen: "./assets/css.png", estrellas: 3 },
   { nombre: "JavaScript", imagen: "./assets/javascript.png", estrellas: 3 },

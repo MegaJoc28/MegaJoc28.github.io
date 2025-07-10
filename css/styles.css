@@ -186,22 +186,18 @@ body {
 
 .conocimientos-text {
     overflow: hidden;
-    max-height: 1000px;
-    transition: max-height 0.7s cubic-bezier(0.4, 0.0, 0.6, 1.0), opacity 0.7s ease-out;
-    opacity: 1;
+    max-height: 0; /* Por defecto, estará oculto */
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    /* Un buen valor para la transición para que se vea fluida */
+    transition: max-height 0.7s ease-in-out, opacity 0.7s ease-out, padding 0.7s ease-out;
 }
 
 .conocimientos-text.active {
-    opacity: 0;
-}
-
-.conocimientos-text.hidden {
-    /* Cambiamos de 'active' a 'hidden' para mayor claridad */
-    max-height: 0;
-    opacity: 0;
-    /* Con esto, el contenido se vuelve invisible */
-    padding-top: 0;
-    padding-bottom: 0;
+    opacity: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .arrow {
