@@ -15,7 +15,7 @@ body {
 .flex {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .flex-row {
@@ -65,7 +65,7 @@ body {
 
 .ul-nav {
     display: flex;
-    gap: 2rem;
+    gap: 9rem;
     font-size: 1.1rem;
 }
 
@@ -73,12 +73,11 @@ body {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
+    font-weight: bold;
 }
 
 .nav-link:hover {
-    background-color: #4b6cb7;
-    /* color del logo */
-    color: white;
+    color: rgb(13, 196, 169);
     cursor: pointer;
 }
 
@@ -301,13 +300,14 @@ body {
 
 .footer-icon {
     width: 32px;
-    height: 32px;
     margin: 0 0.5rem;
     transition: transform 0.3s ease;
+    filter: invert(1);
 }
 
 .footer-icon:hover {
     transform: scale(1.2);
+    filter: none;
 }
 
 .footer-redes a:hover {
