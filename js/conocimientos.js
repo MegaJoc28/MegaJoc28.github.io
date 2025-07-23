@@ -2,7 +2,7 @@
 import { frontendSkills, backendSkills, otherSkills } from "./habilidades.js";
 
 function crearHabilidadHTML(skill) {
-  if (!skill.nombre || !skill.imagen || !skill.estrellas) {
+  if (!skill.nombre || !skill.imagen) {
     throw new Error("Error al cargar la data.")
   };
 
@@ -11,7 +11,7 @@ function crearHabilidadHTML(skill) {
 
   div.innerHTML = `
     <img class="conocimientos-img" src="${skill.imagen}" alt="${skill.nombre}">
-    <p class="conocimientos-img__text"><strong>${skill.nombre}</strong> - Nivel: ${skill.estrellas} ⭐</p>`;
+    <p class="conocimientos-img__text"><strong>${skill.nombre}</p>`;
   return div;
 }
 
