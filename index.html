@@ -28,11 +28,28 @@
         </nav>
     </header>
 
-    <section id="presentacion" class="presentacion flex-row p-8">
+    <div class="sidebar">
+        <a href="https://www.linkedin.com/in/j-zapata/" target="_blank" class="sidebar-icon linkedin">
+            <img src="./assets/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/MegaJoc28" target="_blank" class="sidebar-icon github">
+            <img src="./assets/github.svg" alt="GitHub">
+        </a>
+        <a href="mailto:jzapatasegui@gmail.com" class="sidebar-icon email">
+            <img src="./assets/mail.svg" alt="Email">
+        </a>
+    </div>
+
+    <section id="presentacion" class="presentacion flex p-8">
         <img id="presentacion-foto" class="presentacion-foto" src="./assets/foto-pagina.png">
-        <p id="presentacion-text" class="presentacion-text px-2">Mi nombre es José Zapata, actualmente estudiando
-            programación de manera autónoma. Manejo HTML, CSS y JavaScript. Aquí podrás ver algunos de mis
-            proyectos.</p>
+        <div class="presentacion-separator"></div>
+        <div class="presentacion-content">
+            <h1 class="presentacion-title">¡Hola!, soy José Zapata.<br><span class="presentacion-subtitle">Frontend Developer.</span></h1>
+            <p id="presentacion-text" class="presentacion-text">Me entusiasma mucho la idea de crear páginas y proyectos web, por lo mismo actualmente estudio
+                programación frontend de manera autónoma. Aquí podrás ver algunos de mis
+                proyectos, y si te gustan, contactarte conmigo en un futuro!</p>
+            <button class="presentacion-btn">Contactame!</button>
+        </div>
     </section>
 
     <section id="proyectos" class="proyectos p-8">
@@ -53,8 +70,8 @@
     </section>
 
     <section id="conocimientos" class="conocimientos p-8">
-        <h2 id="conocimientos-title" class="conocimientos-title" style="cursor:pointer;">
-            Conocimientos <span class="arrow">▲</span>
+        <h2 id="conocimientos-title" class="conocimientos-title">
+            Conocimientos
         </h2>
 
         <div id="conocimientos-text" class="conocimientos-text">
@@ -77,16 +94,6 @@
 
     <footer id="footer" class="footer">
         <p>© 2025 José Zapata. Todos los derechos reservados.</p>
-        <div class="footer-redes">
-            <a href="https://github.com/MegaJoc28" target="_blank">
-                <img src="./assets/github.svg" alt="GitHub" class="footer-icon" />
-            </a>
-            <a href="https://www.linkedin.com/in/j-zapata/" target="_blank">
-                <img src="./assets/linkedin.svg" alt="LinkedIn" class="footer-icon" />
-            </a>
-            <a href="mailto:jzapatasegui@gmail.com">
-                <img src="./assets/mail.svg" alt="Correo" class="footer-icon">
-            </a>
         </div>
     </footer>
 
