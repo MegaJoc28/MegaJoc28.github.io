@@ -23,7 +23,7 @@
                 <li id="nav-proyectos" class="nav-proyectos"><a class="nav-link" href="#proyectos">Proyectos</a></li>
                 <li id="nav-conocimientos" class="nav-conocimientos"><a class="nav-link"
                         href="#conocimientos">Conocimientos</a></li>
-                <li id="nav-contactos" class="nav-contactos"><a class="nav-link" href="#footer">Contactos</a></li>
+                <li id="nav-contactos" class="nav-contactos"><a class="nav-link" href="#contacto">Contactos</a></li>
             </ul>
         </nav>
     </header>
@@ -44,16 +44,17 @@
         <img id="presentacion-foto" class="presentacion-foto" src="./assets/foto-pagina.png">
         <div class="presentacion-separator"></div>
         <div class="presentacion-content">
-            <h1 class="presentacion-title">¡Hola!, soy José Zapata.<br><span class="presentacion-subtitle">Frontend Developer.</span></h1>
-            <p id="presentacion-text" class="presentacion-text">Me entusiasma mucho la idea de crear páginas y proyectos web, por lo mismo actualmente estudio
-                programación frontend de manera autónoma. Aquí podrás ver algunos de mis
-                proyectos, y si te gustan, contactarte conmigo en un futuro!</p>
-            <button class="presentacion-btn">Contactame!</button>
+            <h1 class="presentacion-title">¡Hola!, soy José Zapata.<br><span class="presentacion-subtitle">Frontend
+                    Developer.</span></h1>
+            <p id="presentacion-text" class="presentacion-text">Me entusiasma mucho la idea de crear páginas y proyectos
+                web, por lo mismo actualmente estudio programación frontend de manera autónoma. Aquí podrás ver algunos
+                de mis proyectos, y si te gustan, contactarte conmigo!</p>
+            <a href="#contacto"><button class="presentacion-btn">Contactame!</button></a>
         </div>
     </section>
 
     <section id="proyectos" class="proyectos p-8">
-        <h2 class="proyectos-title">Proyectos</h2>
+        <h2 class="proyectos-title py-3">Proyectos</h2>
         <div class="proyectos-list">
             <div class="proyecto-card">
                 <img src="./assets/proyecto1.png" alt="Proyecto 1" class="proyecto-img" />
@@ -70,7 +71,7 @@
     </section>
 
     <section id="conocimientos" class="conocimientos p-8">
-        <h2 id="conocimientos-title" class="conocimientos-title">
+        <h2 id="conocimientos-title" class="conocimientos-title py-3">
             Conocimientos
         </h2>
 
@@ -92,10 +93,61 @@
         </div>
     </section>
 
+    <section id="contacto" class="contacto p-8">
+        <div class="contact-section">
+            <div class="contact-info">
+                <h2 class="gradient-text">¿TIENES UN PROYECTO PARA DISCUTIR?</h2>
+                <p class="get-in-touch">PONTE EN CONTACTO</p>
+
+                <div class="details-group">
+                    <h3>CONTACTO</h3>
+                    <p>jzapatasegui@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h2>FORMULARIO DE CONTACTO</h2>
+                <form action="https://formspree.io/f/xovleljy" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <footer id="footer" class="footer">
-        <p>© 2025 José Zapata. Todos los derechos reservados.</p>
+        <div class="footer-contenido">
+            <p>© 2025 José Zapata. Todos los derechos reservados.</p>
+
+            <div class="footer-redes">
+                <a href="https://www.linkedin.com/in/j-zapata/" target="_blank" class="footer-icon">
+                    <img src="./assets/linkedin.svg" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/MegaJoc28" target="_blank" class="footer-icon">
+                    <img src="./assets/github.svg" alt="GitHub" />
+                </a>
+                <a href="mailto:jzapatasegui@gmail.com" class="footer-icon">
+                    <img src="./assets/mail.svg" alt="Email" />
+                </a>
+            </div>
         </div>
     </footer>
+
+    <button id="btn-scroll-top" aria-label="Volver arriba"></button>
 
 </body>
 

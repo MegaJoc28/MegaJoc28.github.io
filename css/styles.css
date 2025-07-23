@@ -191,8 +191,8 @@ h1 {
     color: white;
 }
 
-.presentacion-subtitle{
-    color:#66fcf1;
+.presentacion-subtitle {
+    color: #66fcf1;
 }
 
 .presentacion-text {
@@ -210,7 +210,7 @@ h1 {
     border-bottom-left-radius: 40px;
 }
 
-.presentacion-btn{
+.presentacion-btn {
     padding: 1rem;
     background-color: #222;
     border: 2px solid #66fcf1;
@@ -222,11 +222,16 @@ h1 {
     cursor: pointer;
 }
 
+.presentacion-btn:hover {
+    background-color: #47a19b;
+    color: black;
+}
+
 
 /* ------------------------- Proyectos ---------------------------------- */
 
 .proyectos-title {
-    font-size: 2rem;
+    font-size: 4rem;
     margin-bottom: 2rem;
     color: white;
     text-align: center;
@@ -241,7 +246,7 @@ h1 {
     background-color: #3d3b3b;
     border-radius: 1rem;
     padding: 1.5rem;
-    width: 320px;
+    width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
@@ -272,7 +277,7 @@ h1 {
 
 .proyecto-link {
     text-decoration: none;
-    color:rgb(13, 196, 169);
+    color: rgb(13, 196, 169);
     font-weight: bold;
 }
 
@@ -287,8 +292,8 @@ h1 {
 .conocimientos-title {
     text-align: center;
     padding-left: 0;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 4rem;
+    ;
     color: white
 }
 
@@ -310,7 +315,7 @@ h1 {
 
 .conocimientos-img__text {
     margin-top: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: rgb(13, 196, 169);
 }
 
@@ -366,6 +371,173 @@ h1 {
     transform: translateY(-4px);
 }
 
+
+/* ------------------ Contacto ------------------- */
+
+
+#contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    box-sizing: border-box;
+}
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px #00ffff;
+    padding: 50px;
+    width: 90%;
+    max-width: 1200px;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Sección de información de contacto (izquierda) */
+.contact-info {
+    flex: 1;
+    /* Ocupa el espacio disponible */
+    min-width: 300px;
+    /* Ancho mínimo para que no se comprima demasiado */
+    padding-right: 30px;
+    position: relative;
+    /* Para que el z-index funcione correctamente */
+    z-index: 1;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    color: #00ffff
+}
+
+.contact-info .get-in-touch {
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info .get-in-touch i {
+    color: #00ffff;
+    /* Color del icono de burbuja de chat */
+}
+
+.details-group {
+    margin-bottom: 30px;
+}
+
+.details-group h3 {
+    font-size: 1.1em;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.details-group p {
+    font-size: 1em;
+    color: #00ffff;
+    margin: 0;
+}
+
+/* Sección del formulario de contacto (derecha) */
+.contact-form-container {
+    flex: 1;
+    /* Ocupa el espacio restante */
+    min-width: 300px;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-form-container h2 {
+    font-size: 1.8em;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9em;
+    color: #b0b0b0;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 20px);
+    /* Ajusta el padding */
+    padding: 12px 10px;
+    border: 1px solid #00ffff;
+    /* Borde sutil */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    background-color: #4f4f56;
+    /* Fondo de los campos */
+    color: #f0f0f0;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #00ffff;
+    /* Color del borde al enfocar */
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button[type="submit"] {
+    background: #00ffff;
+    /* Gradiente para el botón */
+    color: rgb(0, 0, 0);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    /* Botón más redondeado */
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    /* Para que ocupe todo el ancho y se centre */
+    width: 100%;
+    max-width: 200px;
+    /* Ancho máximo para el botón */
+    margin: 30px auto 0 auto;
+    /* Centrar el botón */
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-3px);
+    /* Pequeño efecto al pasar el mouse */
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4), 0 5px 15px rgba(255, 0, 127, 0.4);
+}
+
+
 /* ------------------ Footer -------------------- */
 
 .footer {
@@ -378,143 +550,164 @@ h1 {
 
 .footer-redes {
     margin-top: 1rem;
+    display: none;
+    /* Oculto por defecto (solo se muestra en responsive) */
+    justify-content: center;
+    gap: 1rem;
 }
 
 .footer-icon {
     width: 32px;
     margin: 0 0.5rem;
     transition: transform 0.3s ease;
-    filter: invert(1);
 }
 
-.footer-icon:hover {
-    transform: scale(1.2);
-    filter: none;
+.footer-icon img {
+    width: 30px;
+    height: 30px;
+    filter: invert(50%) sepia(100%) saturate(2000%) hue-rotate(145deg) brightness(80%) contrast(100%) !important;
+    transition: transform 0.3s ease;
 }
 
+.icon-svg path {
+    fill: #66fcf1 !important;
+    transition: fill 0.3s ease;
+}
+
+.icon-svg:hover path {
+    fill: #00ffff !important;
+}
+
+.footer-icon img:hover {
+    transform: scale(1.1);
+    filter: invert(50%) sepia(100%) saturate(2500%) hue-rotate(145deg) brightness(90%) contrast(100%) !important;
+}
+
+#btn-scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #66fcf1;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
+  color: #222;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(102, 252, 241, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, bottom 0.3s ease;
+  z-index: 10000;
+}
+
+#btn-scroll-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#btn-scroll-top:hover {
+  background-color: #00ffff;
+  color: black;
+}
+
+#btn-scroll-top::before {
+  content: "";
+  display: inline-block;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 12px solid #222;
+  margin-bottom: 2px;
+}
 
 /* ---------------------------- Responsive --------------------------- */
 
-@media (max-width: 768px) {
-    /* Aquí van estilos para pantallas pequeñas */
 
-    /* Mostrar botón hamburguesa */
-    .nav-toggle {
-        display: block;
+@media screen and (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+        gap: 2rem;
     }
 
-    /* Ocultar menú por defecto */
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-toggle {
+        margin-right: auto;
+    }
+
     .ul-nav {
-        display: none;
         flex-direction: column;
-        gap: 1rem;
-        background-color: rgb(85, 85, 85);
+        align-items: flex-start;
+        /* opcional: alinea a la izquierda */
+        gap: 0.8rem;
+        background-color: #222;
         position: absolute;
         top: 60px;
-        /* ajustar según altura del nav */
         right: 0;
-        width: 200px;
-        padding: 1rem;
-        border-radius: 0 0 0 8px;
+        left: 0;
+        padding: 1rem 2rem;
+        display: none;
+        font-size: 1rem;
+        /* más pequeño */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        z-index: 1001;
     }
 
-    .ul-nav a:hover,
-    .ul-nav a:focus {
-        background-color: #777;
-        /* color de fondo al pasar o enfocar */
-        outline: none;
+    .ul-nav li {
+        padding: 0.3rem 0;
     }
 
-    .ul-nav a {
-        display: block;
-        /* Para que ocupe todo el ancho y sea fácil clicar */
-        padding: 0.8rem 1rem;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-    }
-
-    /* Mostrar menú cuando tenga clase active */
     .ul-nav.active {
         display: flex;
     }
 
-    /* Cambiar el padding general para que no sea tan grande */
-    .p-8 {
-        padding: 2rem !important;
-    }
-
-    /* Navegación: apilar los items en columna para que no se amontonen */
-    .ul-nav {
-        flex-direction: column;
-        gap: 1rem;
-        padding-left: 0;
-    }
-
-    /* Presentación: cambiar a columna y centrar */
-    .presentacion.flex-row {
-        flex-direction: column;
-        align-items: center;
+    .nav-toggle {
+        display: block;
     }
 
     .presentacion {
         flex-direction: column;
-        /* Apila los elementos verticalmente en pantallas pequeñas */
         text-align: center;
-        /* Centra el texto en pantallas pequeñas si lo deseas */
+        padding: 2rem;
     }
 
     .presentacion-separator {
-        height: 2px;
-        /* Hazlo horizontal en pantallas pequeñas */
-        width: 150px;
-        /* Ancho de la línea horizontal */
-        background: linear-gradient(to right, rgba(102, 252, 241, 0) 0%, #66fcf1 50%, rgba(102, 252, 241, 0) 100%);
-        /* Degradado horizontal */
-        margin: 20px 0;
-        /* Espacio arriba y abajo */
-    }
-
-    .presentacion-separator::before {
-        /* Oculta o reposiciona el círculo si la línea se vuelve horizontal */
         display: none;
-        /* Ocultar el círculo en móvil */
     }
 
-    .presentacion-content {
-        align-items: center;
-        /* Centra los items del contenido cuando están apilados */
-    }
-
-    /* Imagen de presentación más pequeña */
     .presentacion-foto {
-        width: 150px;
+        max-width: 250px;
     }
 
-    /* Texto presentación centrado y tamaño más legible */
-    .presentacion-text {
-        font-size: 1.1rem;
-        text-align: center;
-        padding: 1rem;
+    .p-8 {
+        padding: 2rem;
     }
 
-    /* Conocimientos: apilar verticalmente */
-    .conocimientos-text {
+    .proyectos-list {
         flex-direction: column;
         align-items: center;
     }
 
-    /* Ajustar tarjetas de habilidades para que no sean muy anchas */
-    .conocimiento {
-        width: 80%;
-        max-width: 300px;
-        margin-bottom: 1.5rem;
+    .proyecto-card {
+        width: 100%;
+        max-width: 90%;
     }
 
-    /* Footer centrado y con padding menor */
-    .footer {
-        padding: 1rem;
-        font-size: 0.9rem;
+    .contact-section {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .footer-redes {
+        display: flex;
     }
 }
